@@ -618,23 +618,7 @@ JavaScript
                                                                     </div>
                             </div>
                         </div>
-                        // Get the carousel element by its ID
-let carouselEl = document.getElementById('bootstrap-video-carousel');
-
-// Create a new Bootstrap 5 Carousel instance with specified options
-const carousel = new bootstrap.Carousel(carouselEl, {
-    interval: 2000,
-    wrap: false,
-});
-
-// Add an event listener for the 'slide.bs.carousel' event, fires immediately when the slide instance method is invoked.
-carouselEl.addEventListener('slide.bs.carousel', (event) => {
-    const container = document.querySelector('.carousel-inner');
-    window.lightGallery(container, {
-        plugins: [lgVideo],
-        selector: '.lg-item',
-    });
-});
+                       
                         <!-- Footer COlumn -->
                         <div class="footer-column col-xl-4 col-lg-4 col-md-6">
                             <div class="widget links-widget">
@@ -685,7 +669,25 @@ carouselEl.addEventListener('slide.bs.carousel', (event) => {
         </footer>
 
     </div>
-    
+    <seript>
+            // Get the carousel element by its ID
+let carouselEl = document.getElementById('bootstrap-video-carousel');
+
+// Create a new Bootstrap 5 Carousel instance with specified options
+const carousel = new bootstrap.Carousel(carouselEl, {
+    interval: 2000,
+    wrap: false,
+});
+
+// Add an event listener for the 'slide.bs.carousel' event, fires immediately when the slide instance method is invoked.
+carouselEl.addEventListener('slide.bs.carousel', (event) => {
+    const container = document.querySelector('.carousel-inner');
+    window.lightGallery(container, {
+        plugins: [lgVideo],
+        selector: '.lg-item',
+    });
+});
+    </seript>
     <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
     
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
