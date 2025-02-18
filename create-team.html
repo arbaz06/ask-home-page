@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html  lang="">
 <head>
@@ -292,69 +293,122 @@
     </ul>
 </nav>
 
+
 <div class="container-fluid">
 
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-<h1 class="h3 mb-0 text-gray-800">FAQs</h1>
-<a href="create-faq.html" class="d-none d-sm-inline-block btn btn-primary shadow-sm"><i class="fas fa-plus"></i> Add Item
+<h1 class="h3 mb-0 text-gray-800">Create Team Member</h1>
+<a href="team-member.html" class="d-none d-sm-inline-block btn btn-primary shadow-sm"><i class="fas fa-bars"></i> All Items
 </a>
 </div>
 
 <div class="card shadow mb-4">
 <div class="card-body">
-<div class="table-responsive">
-<table class="table table-bordered table-sm" id="dtable">
-<thead>
-    <tr>
-        <th>SL</th>
-        <th>Question</th>
-        <th>Action</th>
-    </tr>
-</thead>
-<tbody>
-                        <tr>
-        <td>1</td>
-        <td>What services does your digital agency offer?</td>
-        <td>
-            <a href="#/faq/edit/1" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
-            <a href="#/faq/destroy/1" class="btn btn-danger btn-sm" onClick="return confirm('Are you sure?')"><i class="fas fa-trash"></i></a>
-        </td>
-    </tr>
-                        <tr>
-        <td>2</td>
-        <td>How long does it take to build a website?</td>
-        <td>
-            <a href="#/faq/edit/2" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
-            <a href="#/faq/destroy/2" class="btn btn-danger btn-sm" onClick="return confirm('Are you sure?')"><i class="fas fa-trash"></i></a>
-        </td>
-    </tr>
-                        <tr>
-        <td>3</td>
-        <td>Can you help with my company&#039;s social media presence?</td>
-        <td>
-            <a href="#/faq/edit/3" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
-            <a href="#/faq/destroy/3" class="btn btn-danger btn-sm" onClick="return confirm('Are you sure?')"><i class="fas fa-trash"></i></a>
-        </td>
-    </tr>
-                        <tr>
-        <td>4</td>
-        <td>What sets your digital agency apart from others?</td>
-        <td>
-            <a href="#/faq/edit/4" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
-            <a href="#/faq/destroy/4" class="btn btn-danger btn-sm" onClick="return confirm('Are you sure?')"><i class="fas fa-trash"></i></a>
-        </td>
-    </tr>
-                        <tr>
-        <td>5</td>
-        <td>Do you offer ongoing support after the website is launched?</td>
-        <td>
-            <a href="#/faq/edit/5" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
-            <a href="#/faq/destroy/5" class="btn btn-danger btn-sm" onClick="return confirm('Are you sure?')"><i class="fas fa-trash"></i></a>
-        </td>
-    </tr>
-                    </tbody>
-</table>
+<form action="#/team-member/store" method="post" enctype="multipart/form-data">
+<input type="hidden" name="_token" value="vbJqEcIOXDNqkh5mGGbj5aLqw2DA5AVW5Y2wV3H1" autocomplete="off">            <div class="row">
+<div class="col-md-4">
+    <div class="mb-3">
+        <label for="" class="form-label">Name *</label>
+        <input type="text" name="name" class="form-control" value="">
+    </div>
 </div>
+<div class="col-md-4">
+    <div class="mb-3">
+        <label for="" class="form-label">Slug*</label>
+        <input type="text" name="slug" class="form-control" value="">
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="mb-3">
+        <label for="" class="form-label">Designation *</label>
+        <input type="text" name="designation" class="form-control" value="">
+    </div>
+</div>
+</div>
+<div class="mb-3">
+<label for="" class="form-label">Tagline</label>
+<textarea name="tagline" class="form-control h_100" cols="30" rows="10"></textarea>
+</div>
+<div class="row">
+<div class="col-md-4">
+    <div class="mb-3">
+        <label for="" class="form-label">Email</label>
+        <input type="text" name="email" class="form-control" value="">
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="mb-3">
+        <label for="" class="form-label">Phone</label>
+        <input type="text" name="phone" class="form-control" value="">
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="mb-3">
+        <label for="" class="form-label">Website</label>
+        <input type="text" name="website" class="form-control" value="">
+    </div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+    <div class="mb-3">
+        <label for="" class="form-label">Facebook</label>
+        <input type="text" name="facebook" class="form-control" value="">
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="mb-3">
+        <label for="" class="form-label">Twitter</label>
+        <input type="text" name="twitter" class="form-control" value="">
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="mb-3">
+        <label for="" class="form-label">Linkedin</label>
+        <input type="text" name="linkedin" class="form-control" value="">
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="mb-3">
+        <label for="" class="form-label">Instagram</label>
+        <input type="text" name="instagram" class="form-control" value="">
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="mb-3">
+        <label for="" class="form-label">YouTube</label>
+        <input type="text" name="youtube" class="form-control" value="">
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="mb-3">
+        <label for="" class="form-label">Pinterest</label>
+        <input type="text" name="pinterest" class="form-control" value="">
+    </div>
+</div>
+</div>
+<div class="mb-3">
+<label for="" class="form-label">Experience Text</label>
+<textarea name="experience_text" class="form-control h_100" cols="30" rows="10"></textarea>
+</div>
+<div class="mb-3">
+<label for="" class="form-label">SEO Title</label>
+<input type="text" name="seo_title" class="form-control" value="">
+</div>
+<div class="mb-3">
+<label for="" class="form-label">SEO Meta Description</label>
+<textarea name="seo_meta_description" class="form-control h_100" cols="30" rows="10"></textarea>
+</div>
+<div class="row">
+<div class="col-md-4">
+    <div class="mb-3">
+        <label for="" class="form-label">Photo *</label>
+        <div><input type="file" name="photo"></div>
+    </div>
+</div>
+</div>
+<button type="submit" class="btn btn-success mb-50 btn-common">Submit</button>
+</form>
 </div>
 </div>
 
